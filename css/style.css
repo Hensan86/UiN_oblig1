@@ -98,9 +98,8 @@ body {
     width: 50%;
     grid-template-columns: 1fr;
     grid-template-areas: 
-                    "header"
-                    "nav"
-                    "main";
+                    "header nav"
+                    "main main";
         
     }
     
@@ -133,6 +132,7 @@ nav {
     
 header {
     grid-area: header;
+    margin: auto;
 }
     
 }
