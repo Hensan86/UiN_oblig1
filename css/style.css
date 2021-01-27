@@ -1,0 +1,138 @@
+body {
+    display: grid;
+    margin: auto;
+    max-width: 1800px;
+    font-family: "Georgia", sans-serif;
+    font-size: 100%;
+    grid-template-areas: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "header header header nav"
+                         "main main main main";
+}
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+
+}
+
+.mainsection {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 33.333333%;
+    margin: auto;
+    font-size: 80%;
+    
+}
+
+.mainsectionarticles {
+    flex-grow: 1;
+    justify-content: space-around;
+    padding: 20px;
+    max-width: 50%;
+
+}
+
+
+.inputboxes {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+li, a {
+    list-style: none;
+    text-decoration: none;
+}
+
+input[type=submit] {
+    width: 12%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 6px 26px;
+    border: none;
+    font-size: 110%;
+    margin-left: 53%;
+    
+}
+
+.completebtn {
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    padding: 6px 6px;
+    font-size: 90%;
+    margin-left: 60%;
+    margin-top: 4%;
+
+
+}
+
+label, input {
+    display: block;
+    margin-top: 1%;
+}
+
+form {
+    max-width: 800px;
+    margin: auto;
+    margin-left: 0;
+    margin-top: 5%;
+}
+
+@media only screen and (max-width: 800px) {
+    
+body {
+    display: grid;
+    font-size: 90%;
+    width: 50%;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+                    "header"
+                    "nav"
+                    "main";
+        
+    }
+    
+.mainsection {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    font-size: 80%;
+    
+}
+
+.mainsectionarticles {
+    padding: 5px;
+    width: 100%;
+    margin: auto;
+
+}
+    
+    
+input[type=submit] {
+    width: 40%;
+    margin-left: 60%;
+    
+}
+    
+nav {
+    grid-area: nav;
+    margin: auto;
+}
+    
+header {
+    grid-area: header;
+}
+    
+}
